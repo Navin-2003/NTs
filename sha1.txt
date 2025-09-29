@@ -1,0 +1,13 @@
+import hashlib
+
+# Get input from user
+user_input = input("Enter a string to hash: ")
+
+# Hash the input using SHA-1
+sha1_hash = hashlib.sha1(user_input.encode())
+
+# Show byte representation
+print("Byte equivalent of hash:", sha1_hash.digest())
+
+# Show hexadecimal representation
+print("Hexadecimal equivalent of hash:", sha1_hash.hexdigest())
